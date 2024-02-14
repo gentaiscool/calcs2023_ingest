@@ -1,0 +1,384 @@
+\documentclass[11pt,oneside]{book}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[a4paper,top=2cm,bottom=3cm,left=2cm,right=2cm,marginparwidth=1.75cm]{geometry}
+\usepackage{hyperref}
+\usepackage{eurosym}
+
+
+%\usepackage[T1]{fontenc}
+% For Vietnamese characters
+\usepackage[T5]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol}
+\usepackage{pdfpages}
+\usepackage{pax}
+\usepackage{times}
+\usepackage[english,latin]{babel}
+
+\hypersetup{
+    colorlinks,
+    linktoc=all,
+    linkcolor=red,
+    pdftitle={Proceedings of the 6th Workshop on Computational Approaches to Linguistic Code-Switching}
+}
+\setlength{\paperwidth}{21cm}    % A4
+\setlength{\paperheight}{29.7cm} % A4
+\special{papersize=21cm, 29.7cm}
+\pdfpageheight\paperheight
+\pdfpagewidth\paperwidth
+\setlength\topmargin{-5mm} \setlength\oddsidemargin{-0cm}
+\setlength\textheight{24.7cm} \setlength\textwidth{16cm}
+\setlength\columnsep{0.6cm}  \newlength\titlebox \setlength\titlebox{2.00in}
+\setlength\headheight{5pt}   \setlength\headsep{0pt}
+\setlength\footskip{1.0cm}
+\setlength\parindent{0pt}
+
+\pagestyle{plain}
+\pagenumbering{roman}
+
+\date{}
+\title{ACL Anthology}
+
+% General use macros
+
+\begin{document}
+
+%%%%%%%%%
+% Cover %
+%%%%%%%%%
+\begin{titlepage}
+  \phantomsection
+  \addcontentsline{toc}{section}{Title page}
+  \begin{center}
+    \vspace{1.5cm}
+
+    {\LARGE CALCS 2023}
+
+    \vspace*{65mm}
+
+    {\bf\LARGE Computational Approaches to Linguistic Code-Switching}
+
+    \vspace*{5cm}
+
+    {\bf\LARGE Proceedings of the Workshop}
+
+    \vfill
+
+    {\LARGE December 7, 2023}
+  \end{center}
+\end{titlepage}
+\newpage
+
+%%%%%%%%%%%%
+% Sponsors %
+%%%%%%%%%%%%
+\setcounter{page}{2}
+\phantomsection
+\addcontentsline{toc}{section}{Sponsors}
+\vspace*{2cm}
+\noindent
+
+{\Large The CALCS organizers gratefully acknowledge the support from the following sponsors.}
+\bigskip
+
+\vspace*{1cm}
+
+
+    \begin{samepage}
+  \noindent
+  {\Large \textbf{Gold}}
+
+  \nopagebreak
+            \begin{minipage}[c][0.21\linewidth][c]{0.21\linewidth}
+        \includegraphics[width=\linewidth]{examples/calcs/sponsor_logos/bloomberg.png}
+      \end{minipage}\hspace{0.05\linewidth}
+    
+    \end{samepage}
+
+  \bigskip
+  \bigskip
+\newpage
+
+
+%%%%%%%%%%%%%
+% Copyright %
+%%%%%%%%%%%%%
+\phantomsection
+\addcontentsline{toc}{section}{Copyright}
+\vspace*{11cm}
+{\large
+
+\noindent
+\textcopyright 2023 Association for Computational Linguistics\\
+
+\vspace*{2cm}
+\noindent
+Order copies of this and other ACL proceedings from:
+
+\vspace*{1cm}
+\begin{tabular}{p{1.5cm}l}
+& Association for Computational Linguistics (ACL)\\
+& 209 N. Eighth Street\\
+& Stroudsburg, PA 18360\\
+& USA\\
+& Tel: +1-570-476-8006\\
+& Fax: +1-570-476-0860\\
+&{\tt acl@aclweb.org}\\
+\end{tabular}
+
+\vspace*{1cm}
+ISBN 979-8-89176-053-0
+}
+\newpage
+
+
+%%%%%%%%%%%%
+% Prefaces %
+%%%%%%%%%%%%
+  \phantomsection
+  \addcontentsline{toc}{section}{Introduction}
+  \begin{center}
+   { \Large \textbf{Introduction}}
+  \end{center}
+  \vspace*{0.5cm}
+  Bienvenidos to the proceedings of the sixth edition of the workshop on computational approaches for linguistic code-switching (CALCS-2023)! 
+Code-switching is a common phenomenon in the multilingual communities where multilingual speakers communicate by moving back and forth between the languages they speak when communicating with other multilingual speakers. 
+This year the workshop is being held in Singapore on December 7th, 2023 at EMNLP. \\
+
+This workshop series brings together experts and practitioners that are currently working on different aspects of code-switching with a special focus on motivating tighter collaborations between speech and text researchers. 
+We received 15 regular workshop submissions, of which we accepted 8 and 1 non-archival. 
+Our workshop also aims to motivate new research and energize the community to take on the challenges posed by code-switching data. \\
+%
+
+The workshop program includes short talks from regular workshop submissions and keynote speakers. 
+We also have a stellar invited speaker program with a keynote talk by Preethi Jyothi and Haizhou Li. 
+We would like to thank the EMNLP workshop organizers for their help during the organization of the workshop. 
+It would have been great to see everyone face to face in Singapore and we hope that you join us on December 7th and that you enjoy the program we put together. \\ \\
+
+%
+Let’s talk code-switching in December! \\
+
+%
+The Workshop Organizers
+  \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Organizing Committee %
+%%%%%%%%%%%%%%%%%%%%%%%%
+\phantomsection
+\addcontentsline{toc}{section}{Organizing Committee}
+\begin{center}
+{\Large \textbf{Organizing Committee}}
+\end{center}
+\vspace*{1cm}
+\begin{description}
+  \item{\bf Organizer}\vspace{2mm}\\
+      Sudipta Kar, Amazon\\
+      Genta Indra Winata, Bloomberg\\
+      Marina Zhukova, University of California, Santa Barbara\\
+      Thamar Solorio, University of Houston and Mohammad bin Zayed University of Artificial Intelligence\\
+      Mona Diab, Carnegie Mellon University\\
+      Sunayana Sitaram, Microsoft Research\\
+      Monojit Choudhury, Microsoft Turing\\
+      Kalika Bali, Microsoft Research\\
+  \end{description}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%
+% Program Committee %
+%%%%%%%%%%%%%%%%%%%%%
+\phantomsection
+\addcontentsline{toc}{section}{Program Committee}
+\begin{center}
+\Large \textbf{Program Committee}
+\end{center}
+\vspace*{1cm}
+\begin{description}
+  \item{\bf Program Committee}\vspace{2mm}\\
+            A. Seza Doğruöz\\
+          Abhinav Arora\\
+          Dama Sravani\\
+          David Vilares\\
+          Elena Álvarez-Mellado\\
+          Els Lefever\\
+          Holy Lovenia\\
+          François Yvon\\
+          Ganesh Jawahar\\
+          Gustavo Aguilar\\
+          Kellen Gillespie\\
+          Manuel Mager\\
+          Parth Patwa\\
+          Salim Sazzed\\
+          Segun Aroyehun\\
+          Shuguang Chen\\
+          Suman Dowlagar\\
+          Suraj Maharjan\\
+          Tanya Roosta\\
+          Vivek Srivastava\\
+          Xingzhi Guo\\
+          Yihong Theis\\
+      
+  \item{\bf Invited Speakers}\vspace{2mm}\\
+            Haizhou Li, The Chinese University of Hong Kong and National University of Singapore\\
+          Preethi Jyothi, IIT Bombay\\
+      
+\end{description}
+\newpage
+
+%%%%%%%%%%%%%%%%%
+% Invited Talks %
+%%%%%%%%%%%%%%%%%
+  \phantomsection
+  \addcontentsline{toc}{section}{Keynote Talk: Modeling Code-Switch Languages Using Bilingual Parallel Corpus}
+  \begin{center}
+    {\LARGE \textbf{Keynote Talk: Modeling Code-Switch Languages Using Bilingual Parallel Corpus}\\}
+    \vspace*{0.5cm}
+    %\begin{minipage}[c][0.35\linewidth][c]{0.35\linewidth}
+     % \end{minipage}\\
+    \textbf{Haizhou Li}\\
+        The Chinese University of Hong Kong, Shenzhen; National University of Sinagapore\\
+        
+        
+                
+  \end{center}
+
+  \vspace*{0.2cm}
+    \textbf{Abstract:} Language modeling is the technique to estimate the probability of a sequence of words. A bilingual language model is expected to model the sequential dependency for words across languages, which is difficult due to the inherent lack of suitable training data as well as diverse syntactic structure across languages. We propose a bilingual attention language model (BALM) that simultaneously performs language modeling objective with a quasi-translation objective to model both the monolingual as well as the cross-lingual sequential dependency. The attention mechanism learns the bilingual context from a parallel corpus. We will discuss the study of multilingualism in South East Asia and how code-switch language models can be useful for language processing. \\
+  \newline
+  
+    \textbf{Bio:} Haizhou Li is the X.Q. Deng Presidential Chair Professor in the School of Data Science, The Chinese University of Hong Kong, Shenzhen, China. He is also an Adjunct Professor at the National University of Singapore, Singapore and a Bremen Excellence Chair Professor at the University of Bremen, Germany. Prior to joining CUHK (Shenzhen), Professor Li has taught at Nanyang Technological University and National University of Singapore (2006-2016) in Singapore, University of Eastern Finland (2009) in Finland, and University of New South Wales (2011-2016) in Australia. He was the Principal Scientist and Research Director at the Institute for Infocomm Research (2003-2016), the Agency for Science, Technology and Research, Singapore. Professor Li is an IEEE Fellow, and ISCA Fellow.
+
+He has served as the Editor-in-Chief of IEEE-ACM Transactions on Audio Speech and Language Processing (2015-2018), Associate Editor of Computer Speech and Language (2012-2021), Springer International Journal of Social Robotics (2008-2021), and a Member of IEEE Speech and Language Processing Technical Committee (2013-2015), Awards Board (2021-2023), and Publications Board (2015-2018) of IEEE Signal Processing Society. He was the President of the International Speech Communication Association (ISCA, 2015-2017), the President of Asia Pacific Signal and Information Processing Association (APSIPA, 2015-2016), the President of the Asian Federation of Natural Language Processing (AFNLP, 2017-2018). He was the General Chair of major scientific conferences including ACL 2012, INTERSPEECH 2014, and ICASSP 2022.
+
+  \newpage
+    \phantomsection
+  \addcontentsline{toc}{section}{Keynote Talk: Resource-efficient Computational Models for Code-switched Speech and Text}
+  \begin{center}
+    {\LARGE \textbf{Keynote Talk: Resource-efficient Computational Models for Code-switched Speech and Text}\\}
+    \vspace*{0.5cm}
+    %\begin{minipage}[c][0.35\linewidth][c]{0.35\linewidth}
+     % \end{minipage}\\
+    \textbf{Preethi Jyothi}\\
+        IIT Bombay\\
+        
+        
+                
+  \end{center}
+
+  \vspace*{0.2cm}
+    \textbf{Abstract:} Code-switching, i.e., the linguistic phenomenon of switching between languages within and across sentences, is widely prevalent in multilingual societies. Code-switched inputs pose a serious challenge to existing speech and NLP models. The challenge mainly emerges due to the limited availability of natural code-switched data and the inherent diversity in code-switching. In this talk, we will discuss techniques that aim to effectively address these dual challenges. These techniques will cover how to exploit monolingual speech and text for code-switching, how to generate synthetic and diverse code-switched text to augment real data and how to judiciously use existing real code-switched speech and text in conjunction with other linguistic resources.\\
+  \newline
+  
+    \textbf{Bio:} Preethi is an Associate Professor at IIT Bombay. She joined the department in September 2016. Prior to that, she was a Beckman Postdoctoral Fellow at the University of Illinois at Urbana-Champaign. She obtained my Ph.D. from the CSE Department at The Ohio State University in 2013. Her research interests are broadly in the areas of automatic speech recognition and machine learning as applied to speech, and code-switching.
+  \newpage
+  
+
+%%%%%%%%%%%%%%%%%
+% Panels %
+%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%
+% Special Additional Pages %
+%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%
+% Table of Contents %
+%%%%%%%%%%%%%%%%%%%%%
+\phantomsection
+\addcontentsline{toc}{section}{Table of Contents}
+\newpage  % Empty page before TOC
+\pagestyle{plain}
+\begin{center}
+{\Large \textbf{Table of Contents}}
+\end{center}
+\vspace*{1em}
+\newcommand\page[1]{\rightskip=25pt \dotfill\rlap{\hbox to 25pt{\hfill#1}}\par}
+\begin{itemize}[leftmargin=*,label={}]
+       \item \hyperlink{page.1}{\emph{TongueSwitcher: Fine-Grained Identification of German-English Code-Switching}}\\ \hspace*{2em} Igor Sterner\index{Sterner} and Simone Teufel\index{Teufel}\dotfill \hyperlink{page.1}{1}
+       \item \hyperlink{page.14}{\emph{Towards Real-World Streaming Speech Translation for Code-Switched Speech}}\\ \hspace*{2em} Belen Alastruey\index{Alastruey}, Matthias Sperber\index{Sperber}, Christian Gollan\index{Gollan}, Dominic Telaar\index{Telaar}, Tim Ng\index{Ng} and Aashish Agarwal\index{Agarwal}\dotfill \hyperlink{page.14}{14}
+       \item \hyperlink{page.23}{\emph{Language Preference for Expression of Sentiment for Nepali-English Bilingual Speakers on Social Media}}\\ \hspace*{2em} Niraj Pahari\index{Pahari} and Kazutaka Shimada\index{Shimada}\dotfill \hyperlink{page.23}{23}
+       \item \hyperlink{page.33}{\emph{Text-Derived Language Identity Incorporation for End-to-End Code-Switching Speech Recognition}}\\ \hspace*{2em} Qinyi Wang\index{Wang} and Haizhou Li\index{Li}\dotfill \hyperlink{page.33}{33}
+       \item \hyperlink{page.43}{\emph{Prompting Multilingual Large Language Models to Generate Code-Mixed Texts: The Case of South East Asian Languages}}\\ \hspace*{2em} Zheng Xin Xin Yong\index{Yong}, Ruochen Zhang\index{Zhang}, Jessica Zosa Forde\index{Forde}, Skyler Wang\index{Wang}, Arjun Subramonian\index{Subramonian}, Holy Lovenia\index{Lovenia}, Samuel Cahyawijaya\index{Cahyawijaya}, Genta Indra Winata\index{Winata}, Lintang Sutawika\index{Sutawika}, Jan Christian Blaise Cruz\index{Cruz}, Yin Lin Tan\index{Tan}, Long Phan\index{Phan}, Long Phan\index{Phan}, Rowena Garcia\index{Garcia}, Thamar Solorio\index{Solorio} and Alham Fikri Aji\index{Aji}\dotfill \hyperlink{page.43}{43}
+       \item \hyperlink{page.64}{\emph{CONFLATOR: Incorporating Switching Point based Rotatory Positional Encodings for Code-Mixed Language Modeling}}\\ \hspace*{2em} Mohsin Ali Mohammed\index{Mohammed}, Sai Teja Kandukuri\index{Kandukuri}, Neeharika Gupta\index{Gupta}, Parth Patwa\index{Patwa}, Anubhab Chatterjee\index{Chatterjee}, Vinija Jain\index{Jain}, Aman Chadha\index{Chadha} and Amitava Das\index{Das}\dotfill \hyperlink{page.64}{64}
+       \item \hyperlink{page.74}{\emph{Unified Model for Code-Switching Speech Recognition and Language Identification Based on Concatenated Tokenizer}}\\ \hspace*{2em} Kunal Dhawan\index{Dhawan}, KDimating Rekesh\index{Rekesh} and Boris Ginsburg\index{Ginsburg}\dotfill \hyperlink{page.74}{74}
+       \item \hyperlink{page.83}{\emph{Multilingual self-supervised speech representations improve the speech recognition of low-resource African languages with codeswitching}}\\ \hspace*{2em} Tolulope Ogunremi\index{Ogunremi}, Christopher Manning\index{Manning} and Dan Jurafsky\index{Jurafsky}\dotfill \hyperlink{page.83}{83}
+  \end{itemize}
+\newpage
+
+%%%%%%%%%%%
+% Program %
+%%%%%%%%%%%
+\phantomsection
+\addcontentsline{toc}{section}{Program}
+\renewcommand{\baselinestretch}{0.87}
+\setlength{\parindent}{0in}
+\setlength{\parskip}{2ex}
+
+\begin{center}
+{\Large \textbf{Program}}
+\end{center}
+\vspace*{0.5em}
+
+        \begin{tabular}{p{24mm}p{124mm}}
+    \multicolumn{2}{l}{\bf Thursday, December 7, 2023 } \\\\
+                09:10 - 09:00 & \emph{Opening Remarks}\\\\
+      
+                      09:05 - 10:35 & \emph{Paper Oral Presentation 1}\\\\
+      
+                
+                      & \hyperlink{page.14}{\emph{Towards Real-World Streaming Speech Translation for Code-Switched Speech}}\\
+        & Belen Alastruey\index{Alastruey}, Matthias Sperber\index{Sperber}, Christian Gollan\index{Gollan}, Dominic Telaar\index{Telaar}, Tim Ng\index{Ng} and Aashish Agarwal\index{Agarwal}\\\\
+                
+                      & \hyperlink{page.33}{\emph{Text-Derived Language Identity Incorporation for End-to-End Code-Switching Speech Recognition}}\\
+        & Qinyi Wang\index{Wang} and Haizhou Li\index{Li}\\\\
+                
+                      & \hyperlink{page.1}{\emph{TongueSwitcher: Fine-Grained Identification of German-English Code-Switching}}\\
+        & Igor Sterner\index{Sterner} and Simone Teufel\index{Teufel}\\\\
+                
+                      & \hyperlink{page.64}{\emph{CONFLATOR: Incorporating Switching Point based Rotatory Positional Encodings for Code-Mixed Language Modeling}}\\
+        & Mohsin Ali Mohammed\index{Mohammed}, Sai Teja Kandukuri\index{Kandukuri}, Neeharika Gupta\index{Gupta}, Parth Patwa\index{Patwa}, Anubhab Chatterjee\index{Chatterjee}, Vinija Jain\index{Jain}, Aman Chadha\index{Chadha} and Amitava Das\index{Das}\\\\
+                
+                      & \hyperlink{page.43}{\emph{Prompting Multilingual Large Language Models to Generate Code-Mixed Texts: The Case of South East Asian Languages}}\\
+        & Zheng Xin Xin Yong\index{Yong}, Ruochen Zhang\index{Zhang}, Jessica Zosa Forde\index{Forde}, Skyler Wang\index{Wang}, Arjun Subramonian\index{Subramonian}, Holy Lovenia\index{Lovenia}, Samuel Cahyawijaya\index{Cahyawijaya}, Genta Indra Winata\index{Winata}, Lintang Sutawika\index{Sutawika}, Jan Christian Blaise Cruz\index{Cruz}, Yin Lin Tan\index{Tan}, Long Phan\index{Phan}, Long Phan\index{Phan}, Rowena Garcia\index{Garcia}, Thamar Solorio\index{Solorio} and Alham Fikri Aji\index{Aji}\\\\
+                      10:25 - 11:00 & \emph{Break}\\\\
+      
+                      11:00 - 11:45 & \emph{Invited Talk - Preethi Jyothi}\\\\
+      
+                      11:45 - 12:15 & \emph{Paper Oral Presentation 2}\\\\
+      
+                
+                      & \hyperlink{page.83}{\emph{Multilingual self-supervised speech representations improve the speech recognition of low-resource African languages with codeswitching}}\\
+        & Tolulope Ogunremi\index{Ogunremi}, Christopher Manning\index{Manning} and Dan Jurafsky\index{Jurafsky}\\\\
+                
+                      & \hyperlink{page.23}{\emph{Language Preference for Expression of Sentiment for Nepali-English Bilingual Speakers on Social Media}}\\
+        & Niraj Pahari\index{Pahari} and Kazutaka Shimada\index{Shimada}\\\\
+                      12:15 - 12:30 & \emph{Findings Paper Code-Switching with Word Senses for Pretraining in Neural Machine Translation}\\\\
+      
+              \end{tabular}
+    \newpage
+          \begin{tabular}{p{24mm}p{124mm}}
+    \multicolumn{2}{l}{\bf Thursday, December 7, 2023 (continued)} \\\\
+                14:00 - 12:30 & \emph{Lunch Break}\\\\
+      
+                      14:00 - 12:15 & \emph{Paper Oral Presentation 3}\\\\
+      
+                
+                      & \hyperlink{page.74}{\emph{Unified Model for Code-Switching Speech Recognition and Language Identification Based on Concatenated Tokenizer}}\\
+        & Kunal Dhawan\index{Dhawan}, KDimating Rekesh\index{Rekesh} and Boris Ginsburg\index{Ginsburg}\\\\
+                      14:15 - 15:30 & \emph{Panel Discussion - Sudipta Kar, Genta Winata, Marina Zhukova}\\\\
+      
+                      15:30 - 16:00 & \emph{Coffee Break}\\\\
+      
+                      16:00 - 16:45 & \emph{Invited Talk - Haizhou Li}\\\\
+      
+                      16:45 - 16:50 & \emph{Best Paper Announcement}\\\\
+      
+                      16:50 - 16:55 & \emph{Closing Remarks}\\\\
+      
+              \end{tabular}
+    \newpage
+      
+
+\end{document}
