@@ -1,0 +1,30 @@
+book_title: Proceedings of the 6th Workshop on Computational Approaches to Linguistic Code-Switching
+event_name: Computational Approaches to Linguistic Code-Switching
+volume_name: main
+cover_subtitle: Proceedings of the Workshop
+anthology_venue_id: CALCS
+start_date: 2023-12-07
+end_date: 2023-12-07
+isbn: 979-8-89176-053-0
+location: Singapore
+editors:
+  - first_name: Genta
+    last_name: Winata
+    middle_name: Indra
+  - first_name: Sudipta
+    last_name: Kar
+  - first_name: Marina
+    last_name: Zhukova
+  - first_name: Thamar
+    last_name: Solorio
+  - first_name: Mona
+    last_name: Diab
+  - first_name: Sunayana
+    last_name: Sitaram
+  - first_name: Monojit
+    last_name: Choudhury
+  - first_name: Kalika
+    last_name: Bali
+publisher: Association for Computational Linguistics
+volume_name: 1
+watermark_book_title: Proceedings of the 6th Workshop on Computational Approaches to Linguistic Code-Switching

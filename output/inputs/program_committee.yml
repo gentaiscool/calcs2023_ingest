@@ -1,0 +1,54 @@
+- entries:
+  - first_name: A. Seza
+    last_name: Doğruöz
+  - first_name: Abhinav
+    last_name: Arora
+  - first_name: Dama
+    last_name: Sravani
+  - first_name: David
+    last_name: Vilares
+  - first_name: Elena
+    last_name: Álvarez-Mellado
+  - first_name: Els
+    last_name: Lefever
+  - first_name: Holy
+    last_name:  Lovenia
+  - first_name: François
+    last_name: Yvon
+  - first_name: Ganesh
+    last_name: Jawahar
+  - first_name: Gustavo
+    last_name: Aguilar
+  - first_name: Kellen
+    last_name: Gillespie
+  - first_name: Manuel
+    last_name: Mager
+  - first_name: Parth
+    last_name: Patwa
+  - first_name: Salim
+    last_name: Sazzed
+  - first_name: Segun
+    last_name: Aroyehun
+  - first_name: Shuguang
+    last_name: Chen
+  - first_name: Suman
+    last_name: Dowlagar
+  - first_name: Suraj
+    last_name: Maharjan
+  - first_name: Tanya
+    last_name: Roosta
+  - first_name: Vivek
+    last_name: Srivastava
+  - first_name: Xingzhi
+    last_name: Guo
+  - first_name: Yihong
+    last_name: Theis
+  role: Program Committee
+- entries:
+  - first_name: Haizhou
+    institution: The Chinese University of Hong Kong and National University of Singapore
+    last_name: Li
+  - first_name: Preethi
+    institution: IIT Bombay
+    last_name: Jyothi
+  role: Invited Speakers

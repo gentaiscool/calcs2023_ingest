@@ -1,0 +1,27 @@
+- members:
+  - first_name: Sudipta
+    institution: Amazon
+    last_name: Kar
+  - first_name: Genta
+    institution: Bloomberg
+    last_name: Winata
+    middle_name: Indra
+  - first_name: Marina
+    institution: University of California, Santa Barbara
+    last_name: Zhukova
+  - first_name: Thamar
+    institution: University of Houston and Mohammad bin Zayed University of Artificial Intelligence
+    last_name: Solorio
+  - first_name: Mona
+    institution: Carnegie Mellon University
+    last_name: Diab
+  - first_name: Sunayana
+    institution: Microsoft Research
+    last_name: Sitaram
+  - first_name: Monojit
+    institution: Microsoft Turing
+    last_name: Choudhury
+  - first_name: Kalika
+    institution: Microsoft Research
+    last_name: Bali
+  role: Organizer

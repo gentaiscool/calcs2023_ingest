@@ -1,0 +1,82 @@
+- title: Morning Session 1
+  start_time: 2023-12-07 09:00:00
+  end_time: 2023-12-07 10:25:00
+  subsessions:
+    - end_time: 2023-12-07 09:00:00
+      start_time: 2023-12-07 09:10:00
+      title: Opening Remarks
+    - end_time: 2023-12-07 10:35:00
+      papers:
+        - end_time: 2023-12-07 09:25:00
+          id: 3
+          start_time: 2023-12-07 09:10:00
+        - end_time: 2023-12-07 09:40:00
+          id: 5
+          start_time: 2023-12-07 09:25:00
+        - end_time: 2023-12-07 09:55:00
+          id: 2
+          start_time: 2023-12-07 09:40:00
+        - end_time: 2023-12-07 10:10:00
+          id: 10
+          start_time: 2023-12-07 09:55:00
+        - end_time: 2023-12-07 10:25:00
+          id: 6
+          start_time: 2023-12-07 10:10:00
+      start_time: 2023-12-07 09:05:00
+      title: Paper Oral Presentation 1
+- end_time: 2023-12-07 11:00:00
+  start_time: 2023-12-07 10:25:00
+  title: Break
+- title: Morning Session 2
+  start_time: 2023-12-07 11:00:00
+  end_time: 2023-12-07 12:30:00
+  subsessions:
+    - end_time: 2023-12-07 11:45:00
+      start_time: 2023-12-07 11:00:00
+      title: Invited Talk - Preethi Jyothi
+    - end_time: 2023-12-07 12:15:00
+      papers:
+        - end_time: 2023-12-07 12:00:00
+          id: 20
+          start_time: 2023-12-07 11:45:00
+        - end_time: 2023-12-07 12:15:00
+          id: 4
+          start_time: 2023-12-07 12:00:00
+      start_time: 2023-12-07 11:45:00
+      title: Paper Oral Presentation 2
+    - end_time: 2023-12-07 12:30:00
+      start_time: 2023-12-07 12:15:00
+      title: Findings Paper Code-Switching with Word Senses for Pretraining in Neural Machine Translation
+- end_time: 2023-12-07 12:30:00
+  start_time: 2023-12-07 14:00:00
+  title: Lunch Break
+- title: Afternoon Session 1
+  start_time: 2023-12-07 14:00:00
+  end_time: 2023-12-07 15:30:00
+  subsessions:
+    - end_time: 2023-12-07 12:15:00
+      papers:
+        - end_time: 2023-12-07 14:15:00
+          id: 18
+          start_time: 2023-12-07 14:00:00
+      start_time: 2023-12-07 14:00:00
+      title: Paper Oral Presentation 3
+    - end_time: 2023-12-07 15:30:00
+      start_time: 2023-12-07 14:15:00
+      title: Panel Discussion - Sudipta Kar, Genta Winata, Marina Zhukova 
+- end_time: 2023-12-07 16:00:00
+  start_time: 2023-12-07 15:30:00
+  title: Coffee Break
+- title: Afternoon Session 2
+  start_time: 2023-12-07 16:00:00
+  end_time: 2023-12-07 16:55:00
+  subsessions:
+    - end_time: 2023-12-07 16:45:00
+      start_time: 2023-12-07 16:00:00
+      title: Invited Talk - Haizhou Li
+    - end_time: 2023-12-07 16:50:00
+      start_time: 2023-12-07 16:45:00
+      title: Best Paper Announcement
+    - end_time: 2023-12-07 16:55:00
+      start_time: 2023-12-07 16:50:00
+      title: Closing Remarks
